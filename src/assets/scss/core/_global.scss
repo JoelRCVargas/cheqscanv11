@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $fontPrimary;
+}
+:host {
+    display: block;
+    left: 0;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+h1,h2,h3{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+span{
+    color: $colorPrimary;
+    font-size:12px;
+    line-height: 14px;
+    font-weight: 500;
+}
+.title{
+    font-family: $fontTitle;
+    font-weight: 700;
+    font-size: 24px;
+    color: $colorPrimary;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.subtitle{
+    font-family: $fontTitle;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: .08em;
+    color: $bgBottom;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    & > app-deposits{
+        width: 100%;
+    }
+    & > app-deposits-detail{
+        width: 100%;
+    }
+    & > app-deposits-consult{
+        width: 100%;
+    }
+}
+.br-16{
+    border-radius: 16px; 
+}
+.br-8{
+    border-radius: 8px; 
+}
+.striped{
+    background-color: #FAFAFA;
+}
+.main-section{
+    width: 100%;
+}
+.border-bottom{
+    border-bottom: 1px solid #E5E5E5;
+}
+.color-bottom{
+    color: $bgBottom !important;
+}
+.color-danger{
+    color: red !important;
+}
+.color-success{
+    color: green !important;
+}
+.f-20{
+    font-size: 20px;
+}
+.border-none{
+    border-radius: 0 !important;
+}
+.border-right{
+    border-right: 1px solid #CCC !important;
+}
+.mb-none{
+    margin-bottom: 0 !important;
+}
+.bs-none{
+    box-shadow: none !important;
+}
+
+.b-none{
+    border: none !important;
+}
+.border-on{
+    border: 1px solid $colorText;
+}
+
+#contratoModal{
+    & h1{
+        color: $colorPrimary;
+    }
+    & p{
+        color: $colorPrimary;
+    }
+}
+.content-fixed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.overflow-hidden{
+    overflow: hidden;
+    max-width: 100%;
+}

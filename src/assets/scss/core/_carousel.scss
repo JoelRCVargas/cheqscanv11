@@ -1,0 +1,16 @@
+.content-carousel{
+    background: #FFF;
+    box-shadow: 1px 1px 4px $colorText;
+    & .carousel-control-prev-icon,
+    & .carousel-control-next-icon{
+        background-color: $bgBottom;
+        color: #FFF;
+    }
+    & .carousel-control-next, 
+    & .carousel-control-prev {
+        position: relative;
+        background: transparent;
+        background-color: transparent;
+        width: 8%;
+    }
+}
