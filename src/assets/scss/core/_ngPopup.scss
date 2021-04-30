@@ -1,0 +1,41 @@
+.ng-popup--material-theme{
+    & .ng-popup__content{
+        text-align: center;
+        padding-bottom: inherit !important;
+        padding: 40px;
+        padding-bottom: 40px !important;
+        &:focus-visible{
+            box-shadow: none;
+            border: none;
+            outline: none;
+        }
+        & > .ng-popup__header{
+            display: block;
+        }
+        & > .ng-popup__text{
+            text-align: center;
+            color: $colorText;
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+            font-size: 24px;
+        }
+        & > .ng-popup__footer {
+            justify-content: center;
+            & > button{
+                background: $bgBottom;
+                border-radius: 10px;
+                font-family: $fontTitle;
+                font-size: 12px;
+            }
+            & > .ng-popup__cancel-btn{
+                background: #FFF;
+                border: 2px solid $bgBottom;
+                color: $bgBottom !important;
+            }
+        }
+        & h3{
+            font-family: $fontTitle;
+            color: $bgBottom;
+        }
+    }
+}

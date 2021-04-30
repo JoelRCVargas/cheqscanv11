@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgPopupsService } from 'ng-popups';
+
 
 @Component({
   selector: 'app-check',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckComponent implements OnInit {
 
-  constructor() { }
+  isToggle : boolean = false;
+
+  constructor(private ngPopups: NgPopupsService) { }
 
   ngOnInit() {
   }
 
+  delete(){
+    // Confirm
+    this.ngPopups.confirm('¿Estás seguro que quieres borrar?', {
+      theme: 'material',
+      okButtonText: 'continuar',
+      cancelButtonText: 'regresar',
+      color: 'white',
+      title: 'NOTIFICACIÓN'
+    });
+  }
+
+  changeToggle(){
+    this.isToggle = true;
+  }
+  
+  offToggle(){
+    this.isToggle = false;
+  }
 }

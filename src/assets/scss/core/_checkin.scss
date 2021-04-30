@@ -1,0 +1,26 @@
+.check-img-container{
+    background: #FFF;
+    box-shadow: 1px 1px 4px $colorText;
+    max-height: 165px;
+    padding: 5px 0;
+    & > .container--img{
+        width: 100%;
+        overflow: hidden;
+        & > img{
+            width: 47.5%;
+        }
+    }
+    & > .content--icon{
+        width: 55px;
+        & > .icon{
+            width: 24px;
+            height: 32px;
+            background: $bgBottom;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}

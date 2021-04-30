@@ -1,9 +1,10 @@
 .content-table{
     margin-right: 22px;
-    margin-bottom: 22px;
     overflow-x:auto;
-    min-width: 675px;
+    min-width: calc(678px + 15px);
     box-shadow: 1px 1px 4px $colorText;
+    max-height: 475px;
+    overflow-x: hidden;
     &.table-grid{
         min-width: inherit;
         width: 100%;
@@ -74,8 +75,8 @@
         width: 100%;
     }
     & > .table{
-        max-width: 675px;
-        min-width: 675px;
+        max-width: 650px;
+        min-width: 650px;
         border-collapse: separate;
         border-spacing: 0;
         vertical-align: middle;

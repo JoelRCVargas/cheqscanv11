@@ -52,6 +52,9 @@ span{
     & > app-deposits-consult{
         width: 100%;
     }
+    & > app-check{
+        width: 100%;
+    }
 }
 .br-16{
     border-radius: 16px; 
@@ -117,4 +120,13 @@ span{
 .overflow-hidden{
     overflow: hidden;
     max-width: 100%;
+}
+.mx-height-270{
+    max-height: 290px !important;
+}
+.mx-height-360{
+    max-height: 385px !important;
+}
+.mx-height-165{
+    max-height: 165px !important;
 }

@@ -1,6 +1,6 @@
 #sidebar {
-    min-width: 240px;
-    max-width: 240px;
+    min-width: 239px;
+    max-width: 239px;
     background: $bgPrimary;
     color: #fff;
     transition: all 0.3s;
@@ -65,7 +65,7 @@
         font-size: 1.7rem;
     }
     & > .sidebar-header {
-        padding: 16px 0;
+        padding: 0 0;
         padding-bottom: 29px;
         text-align: center;
         position: relative;
