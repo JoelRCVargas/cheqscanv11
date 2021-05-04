@@ -17,14 +17,7 @@ export class CheckComponent implements OnInit {
   }
 
   delete(){
-    // Confirm
-    this.ngPopups.confirm('¿Estás seguro que quieres borrar?', {
-      theme: 'material',
-      okButtonText: 'continuar',
-      cancelButtonText: 'regresar',
-      color: 'white',
-      title: 'NOTIFICACIÓN'
-    });
+    
   }
 
   changeToggle(){

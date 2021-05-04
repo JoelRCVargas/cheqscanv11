@@ -32,6 +32,9 @@
             margin: auto;
             margin-bottom: 5px;
         }
+        & ul li a span{
+            display: none;
+        }
         &  ul ul a {
             padding: 10px !important;
             flex-direction: column;
@@ -64,6 +67,10 @@
         fill: #FFF;
         font-size: 1.7rem;
     }
+    & > ul li a span{
+        color: #FFF;
+        font-size: 14px;
+    }
     & > .sidebar-header {
         padding: 0 0;
         padding-bottom: 29px;
@@ -86,9 +93,15 @@
             width: 100%;
         }
     }
-    & > .sidebar-header strong {
+    & > .sidebar-header strong{
         display: none;
         font-size: 1.8em;
+        & > img{
+            width: 100%;
+            display: block !important;
+            max-width: 58px;
+            margin: auto;
+        }
     }
     & > ul li{
         &.active{

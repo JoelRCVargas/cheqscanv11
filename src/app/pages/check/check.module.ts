@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckComponent } from './check.component';
 import { CheckRoutingModule } from './check-routing.module';
 import { NavbarModule } from 'src/app/components/navbar/navbar.module';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
     declarations :[
@@ -15,7 +16,8 @@ import { NavbarModule } from 'src/app/components/navbar/navbar.module';
         ReactiveFormsModule,
         CommonModule,
         CheckRoutingModule,
-        NavbarModule
+        NavbarModule,
+        SweetAlert2Module
     ],
     providers: [
     

@@ -10,6 +10,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AlertDeleteComponent } from './components/alert-delete/alert-delete.component';
 import { AlertSuccessComponent } from './components/alert-success/alert-success.component';
 import { NgPopupsModule } from 'ng-popups';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { NgPopupsModule } from 'ng-popups';
         prompt: 'Website asks...'
       }
     }),
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
