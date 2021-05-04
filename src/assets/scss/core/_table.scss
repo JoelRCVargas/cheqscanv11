@@ -70,6 +70,11 @@
 
         }
     }
+    &.table-check{
+        & td{
+            padding: 1px 10px;
+        }
+    }
     &.w-100{
         margin-right: inherit;
         width: 100%;
