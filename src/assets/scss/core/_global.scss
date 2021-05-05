@@ -43,6 +43,8 @@ span{
 .wrapper {
     display: flex;
     align-items: stretch;
+    background: $bgPrimary;
+    min-height: 100vh;
     & > app-deposits{
         width: 100%;
     }
@@ -129,4 +131,10 @@ span{
 }
 .mx-height-165{
     max-height: 240px !important;
+}
+
+@media(max-width: 375.98px){
+    .items-flex{
+        flex-direction: column !important;
+    }
 }

@@ -1,8 +1,11 @@
 .navbar{
     background: transparent;
-    padding: 0;
     margin-bottom: 0;
     padding-bottom: 0;
+    background: #F7F7F7;
+    padding: 0 20px;
+    padding-top: 15px !important;
+    border-top-left-radius: 15px;
     & > .navbar-header{
         width: 100%;
         display: flex;
@@ -10,12 +13,8 @@
     }
 }
 
-@media(max-width:745.98px){
-//    .navbar{
-//        & > .navbar-header{
-//            display: flex;
-//            flex-direction: column;
-//            flex-wrap: wrap;
-//        }
-//    }
+@media(max-width:375.98px){
+    .navbar{
+        display: none !important;
+    }
 }

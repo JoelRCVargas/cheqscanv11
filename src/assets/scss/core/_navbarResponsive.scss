@@ -1,0 +1,40 @@
+.navbar-responsive{
+    background: #343537;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    width: 100%;
+    display: none;
+    & > .content-img{
+        width: 100%;
+        & > img{
+            display: block;
+            margin: auto;
+        }
+    }
+    & > .navbar-options-content{
+        min-width: 85px;
+        & .navbar-options{
+            box-shadow: -2px 3px 3px #343537;
+        }
+    }
+}
+.title-responsive{
+    background: #F7F7F7;
+    padding: 0 20px;
+    padding-top: 15px !important;
+    display: none;
+    & > .title{
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:375.98px){
+    .navbar-responsive{
+        display: flex;
+    }
+    .title-responsive{
+        display: block;
+    }
+}

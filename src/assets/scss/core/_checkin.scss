@@ -24,3 +24,26 @@
         }
     }
 }
+
+@media(max-width: 475.98px){
+    .check-img-container{
+        padding: 0 10px;
+        max-height: none !important;
+        & > .container--img{
+            flex-direction: column;
+            & > img{
+                width: 100%;
+                margin: 10px 0 !important;
+            }
+        }
+        & > .content--icon{
+            width: auto;
+            & > .icon-prev{
+                margin-left: -24px;
+            }
+            & > .icon-next{
+                margin-right: -24px;
+            }
+        }
+    } 
+}

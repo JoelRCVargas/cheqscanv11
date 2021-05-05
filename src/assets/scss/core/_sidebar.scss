@@ -158,6 +158,9 @@ a[aria-expanded="true"]::before {
         max-width: 80px;
         text-align: center;
         margin-left: -80px !important ;
+        & svg{
+            display: none;
+        }
     }
     a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
         top: auto;

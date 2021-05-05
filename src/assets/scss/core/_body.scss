@@ -1,14 +1,15 @@
 #content{
-    background: $bgPrimary;
+    background: #F7F7F7;
     padding: 0;
     width: 100%;
+    min-height: 100vh;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
     & > .content-body{
         padding: 0 20px;
         padding-top: 10px;
-        border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         background: #F7F7F7;
-        min-height: 100vh;
     }
 }
 /*Media query*/
@@ -19,3 +20,11 @@
         }
     }
 }
+@media(max-width:475.98px){
+    #content{
+        & > .content-body{
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
