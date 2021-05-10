@@ -15,6 +15,12 @@ const routes: Routes = [
     }
   },
   {
+    path : 'checks/filters',
+    loadChildren: () => {
+      return import('./pages/check-filters/check-filters.module').then(m => m.CheckFiltersModule);
+    }
+  },
+  {
     path : 'deposits',
     loadChildren: () => {
       return import('./pages/deposits/deposits.module').then(m => m.DepositsModule);

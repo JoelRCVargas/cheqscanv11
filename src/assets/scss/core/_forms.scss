@@ -51,6 +51,17 @@
             border-left: none;
         }
     }
+    &.input-filter{
+        width: auto;
+        & > input,
+        & > select{
+            min-width: 160px;
+            background: transparent;
+            unicode-bidi: inherit;
+            direction: inherit;
+            color: $colorText;
+        }
+    }
     & label{
         display: block;
         border-bottom: 1px solid $colorText;
