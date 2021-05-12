@@ -39,6 +39,12 @@ const routes: Routes = [
     }
   },
   {
+    path : 'config/business',
+    loadChildren: () => {
+      return import('./pages/config-business/config-business.module').then(m => m.ConfigBusinessModule);
+    }
+  },
+  {
     path : 'register',
     loadChildren: () => {
       return import('./pages/register/register.module').then(m => m.RegisterModule);

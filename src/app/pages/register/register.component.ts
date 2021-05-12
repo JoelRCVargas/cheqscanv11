@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterComponent implements OnInit {
   
   marginLeft = 0;
+  disabled : boolean = true;
+  toggle : boolean= false;
 
   constructor() { }
 
@@ -22,4 +24,12 @@ export class RegisterComponent implements OnInit {
     this.marginLeft -= 100;
   }
 
+  openToggle($event : any){
+    this.toggle = true;
+    this.disabled = false;
+  }
+
+  closeToggle(){
+    this.toggle = false;
+  }
 }

@@ -3,12 +3,17 @@
     background: #FFF;
     border-radius: 16px;
     max-width: 1072px;
-    margin: auto;
-    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    box-shadow: 1px 1px 4px #898a8d;
+    height: 100%;
+    margin-top: 15px;
+    min-height: 95vh;
     & > .tab-pane{
         width: 100%;
         display: flex;
@@ -95,7 +100,6 @@
                 }
             }
         }
-       
     }
     & > .content-form{
         width: 100%;
@@ -148,7 +152,22 @@
             & svg{
                 margin-right: 15px;
             }
-        } 
+            & thead{
+               & > tr{
+                    border-bottom: 1px solid $colorPrimary;
+                    border-color: $colorPrimary;
+                    border-style: double;
+               }
+            }
+        }
+        & form{
+            max-width: 750px;
+            margin: auto;
+            & input,
+            & select{
+                background: #F7F7F7;
+            }
+        }
     }
 }
 
@@ -180,6 +199,29 @@
             padding: 0 !important;
             padding: 15px 0;
         }
+    }
+}
+
+.modal-register{
+    & .dark-input{
+        position: relative;
+        & input,
+        & select{
+            background: #F7F7F7;
+        }
+    }
+}
+
+.checked{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    background: #F7F7F7;
+    width: 24px;
+    height: 24px;
+    transform: translate(0,-50%);
+    & > svg{
+        width: 100%;
     }
 }
 

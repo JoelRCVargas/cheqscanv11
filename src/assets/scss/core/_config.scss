@@ -1,0 +1,85 @@
+.config-content{
+    & > .body-config{
+        background-color: #FFF;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px #898a8d;
+        width: 100%;
+        padding: 25px 0;
+        padding: 50px;
+        min-height: 75vh;
+        & .content-table{
+            margin: auto;
+            border: 1px solid #E7E7E7;
+            padding: 0;
+            & table{
+                text-align: left;
+                margin-bottom: 0;
+                & thead{
+                    & > tr{
+                        border-bottom: 1px solid #E7E7E7;
+                        border-color: #E7E7E7;
+                        border-style: double;
+                    }
+                }
+                & th,
+                & td{
+                    padding: 10px 1.1rem;
+                }
+                & .footer-table{
+                    display: table-caption;
+                    border-top: 1px solid #E7E7E7;
+                    width: 100%;
+                    padding: 10px 1.1rem;
+                    & > .pagination{
+                        max-width: 350px;
+                        margin-left: auto;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        color: $colorText;
+                        & > .content-input{
+                            max-width: 50px;
+                            padding: 0;
+                            margin-bottom: 8px;
+                            margin-right: 40px;
+                            & input,
+                            & select{
+                                unicode-bidi: unset;
+                                direction: unset;
+                                padding: 0;
+                            }
+                        }
+                        & span{
+                            margin-right: 10px;
+                        }
+                        & .directionals{
+                            padding: 0;
+                            & > svg:nth-child(1){
+                                margin-right: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .dark-input{
+            color: $colorText;
+            & input{
+                border: none;
+                border-bottom: 1px solid #E7E7E7;
+                color: #E7E7E7;
+            }
+            & .input-group-text {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #E7E7E7;
+            }
+        }
+        & input,
+        & select{
+            unicode-bidi: unset;
+            direction: unset;
+        }
+    }
+
+}

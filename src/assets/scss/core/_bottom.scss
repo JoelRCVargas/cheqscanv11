@@ -48,9 +48,16 @@
             background-color: $bgBottom !important;
             border: 2px solid $bgBottom;
         }
+        &:focus{
+            color: $bgBottom    ;
+            box-shadow: unset;
+        }
     }
     &:hover{
         box-shadow: inherit;
         background: $bgBottom;
+    }
+    &:disabled{
+        background: $colorText !important;
     }
 }

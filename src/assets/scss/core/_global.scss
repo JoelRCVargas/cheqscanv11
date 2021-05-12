@@ -57,6 +57,9 @@ span{
     & > app-check{
         width: 100%;
     }
+    > app-config-business{
+        width: 100%;
+    }
 }
 .br-16{
     border-radius: 16px; 
@@ -118,6 +121,7 @@ span{
     top: 0;
     left: 0;
     width: 100%;
+    border-top-left-radius: 0 !important;
 }
 .overflow-hidden{
     overflow: hidden;
