@@ -1,16 +1,13 @@
 .config-content{
-    & > .body-config{
-        background-color: #FFF;
+    & .body-config{
         border-radius: 10px;
-        box-shadow: 1px 1px 4px #898a8d;
         width: 100%;
-        padding: 25px 0;
-        padding: 50px;
         min-height: 75vh;
+        padding: 20px 0;
         & .content-table{
             margin: auto;
             border: 1px solid #E7E7E7;
-            padding: 0;
+            padding: 15px;
             & table{
                 text-align: left;
                 margin-bottom: 0;
@@ -23,7 +20,7 @@
                 }
                 & th,
                 & td{
-                    padding: 10px 1.1rem;
+                    padding: 5px 1.1rem;
                 }
                 & .footer-table{
                     display: table-caption;
@@ -40,13 +37,14 @@
                         & > .content-input{
                             max-width: 50px;
                             padding: 0;
-                            margin-bottom: 8px;
+                            margin-bottom: 7px;
                             margin-right: 40px;
                             & input,
                             & select{
                                 unicode-bidi: unset;
                                 direction: unset;
                                 padding: 0;
+                                font-size: 14px;
                             }
                         }
                         & span{
@@ -60,26 +58,55 @@
                         }
                     }
                 }
+                & svg{
+                    margin-right: 15px;
+                }
             }
         }
-        & .dark-input{
-            color: $colorText;
-            & input{
-                border: none;
-                border-bottom: 1px solid #E7E7E7;
-                color: #E7E7E7;
+        & .content-search{
+            display: flex;
+            justify-content: space-between;
+           
+            & .dark-input{
+                color: $colorText;
+                & input{
+                    color: #E7E7E7;
+                }
+                & .input-group-text {
+                    background: #FFF;
+                }
             }
-            & .input-group-text {
-                background: transparent;
-                border: none;
-                border-bottom: 1px solid #E7E7E7;
+            & .btn-primary{
+                & > svg{
+                    margin-right: 10px;
+                }
             }
         }
         & input,
         & select{
             unicode-bidi: unset;
             direction: unset;
+            font-size: 18px;
         }
     }
-
+    & .nav-tabs{
+        justify-content: center;
+        color: $colorText;
+        & button{
+            color: inherit;
+            padding: .2rem 0;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: .008em;
+            margin: 0 1rem;
+        }
+        & .nav-link{
+            &.active{
+                background: transparent;
+                color: $bgBottom;
+                border: none;
+                border-bottom: 3px solid $bgBottom;
+            }
+        }
+    }
 }

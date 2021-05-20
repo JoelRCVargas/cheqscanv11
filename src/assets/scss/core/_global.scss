@@ -57,7 +57,25 @@ span{
     & > app-check{
         width: 100%;
     }
-    > app-config-business{
+    & > app-config{
+        width: 100%;
+    }
+    & > app-config-business{
+        width: 100%;
+    }
+    & > app-config-business-edit{
+        width: 100%;
+    }
+    & > app-config-notify{
+        width: 100%;
+    }
+    & > app-config-notify-edit{
+        width: 100%;
+    }
+    & > app-config-accounts{
+        width: 100%;
+    }
+    & > app-config-accounts-edit{
         width: 100%;
     }
 }
@@ -135,6 +153,9 @@ span{
 }
 .mx-height-165{
     max-height: 240px !important;
+}
+.w-70{
+    width: 70%;
 }
 
 @media(max-width: 375.98px){

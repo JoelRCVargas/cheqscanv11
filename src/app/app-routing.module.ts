@@ -39,9 +39,45 @@ const routes: Routes = [
     }
   },
   {
+    path : 'config',
+    loadChildren: () => {
+      return import('./pages/config/config.module').then(m => m.ConfigModule);
+    }
+  },
+  {
     path : 'config/business',
     loadChildren: () => {
       return import('./pages/config-business/config-business.module').then(m => m.ConfigBusinessModule);
+    }
+  },
+  {
+    path : 'config/business/edit',
+    loadChildren: () => {
+      return import('./pages/config-business-edit/config-business-edit.module').then(m => m.ConfigBusinessEditModule);
+    }
+  },
+  {
+    path : 'config/notify',
+    loadChildren: () => {
+      return import('./pages/config-notify/config-notify.module').then(m => m.ConfigNotifyModule);
+    }
+  },
+  {
+    path : 'config/notify/edit',
+    loadChildren: () => {
+      return import('./pages/config-notify-edit/config-notify-edit.module').then(m => m.ConfigNotifyEditModule);
+    }
+  },
+  {
+    path : 'config/accounts',
+    loadChildren: () => {
+      return import('./pages/config-accounts/config-accounts.module').then(m => m.ConfigAccountsModule);
+    }
+  },
+  {
+    path : 'config/accounts/edit',
+    loadChildren: () => {
+      return import('./pages/config-accounts-edit/config-accounts-edit.module').then(m => m.ConfigAccountsEditModule);
     }
   },
   {
